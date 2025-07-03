@@ -1,0 +1,18 @@
+docker run -d \
+  --name jenkins \
+  -p 8080:8080 -p 50000:50000 \
+  -v jenkins_home:/var/jenkins_home \
+  jenkins/jenkins:lts
+
+docker run -d --name jenkins -p 8080:8080 -p 50000:50000 -v jenkins_home:/var/jenkins_home jenkins/jenkins:lts
+
+// Instalar python en el Jenkins o con el dockerfile instala el python
+
+// Pasos
+localhost:8080
+
+// Para obtener el token de ingreso: 10aba8c685a34a888053a04905c84ce9
+docker logs jenkins
+
+Crear un nuevo job, tipo pipeline. En el campo Pipeline Script, escribe:
+// pipeline {}
